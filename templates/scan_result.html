@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Scan Results</title>
+</head>
+<body>
+    <h1>Network Scan Results</h1>
+    <table>
+        <tr>
+            <th>IP</th>
+            <th>MAC Address</th>
+        </tr>
+        {% for client in result_list %}
+        <tr>
+            <td>{{ client['IP'] }}</td>
+            <td>{{ client['Mac'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
